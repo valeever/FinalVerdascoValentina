@@ -1,0 +1,100 @@
+<style>
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        }
+
+        @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+        }
+
+        .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+        }
+
+        .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        }
+        .titulo3 {
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+        }
+</style>
+
+<div>
+    <h1 class="titulo3">
+        {{titulo}}
+    </h1>
+</div>
+
+<!--EMPIEZAN LOS DOS CUADRADOS-->
+    <!--PRIMERO CUADRADO-->
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">LLENA CON TUS DATOS</h2>
+                <div class="row">
+    <form action="./contacto" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="id_nombre">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" name="id_apellido">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        <input type="email" class="form-control" name="id_correo" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+        <input type="number" class="form-control" name="id_telefono" placeholder="01115XXXXXXXX">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Motivo de contacto</label>
+        <input type="text" class="form-control" name="id_motivo">
+    </div>
+    <div class="mb-3 text-center">
+                <input type="submit" class="button btn-primary w-50 p-2" value="Enviar Datos">
+    </div>
+    </form>
+    <div class="text-center validacion">
+        <h2 class="text-danger">
+            {{ validacion }}
+        </h2>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--SEGUNDO CUADRADO-->
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+                <h2 class="display-5">ME PONDRÉ EN CONTACTO!</h2>
+                <p class="lead">¡Gracias!</p>
+        </div>
+        </div>
+    </div>
