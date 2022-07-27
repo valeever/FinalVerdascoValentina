@@ -1,0 +1,16 @@
+-- Crear base de datos --
+create database contacto;
+
+-- Usar base de datos -- 
+use contacto;
+
+-- Crear tabla --
+create table TablaDatos (
+id_contacto int unsigned not null auto_increment,
+id_nombre varchar(100) not null,
+id_apellido varchar(100),
+id_correo varchar(100),
+id_telefono int not null,
+id_motivo varchar(1000),
+primary key (id_contacto)
+);
